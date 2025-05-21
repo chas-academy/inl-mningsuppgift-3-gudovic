@@ -25,11 +25,12 @@ addButton.addEventListener('click', () => {
           if (found === false) {
             newArray.push(newObject);
             }
-    for (products of newArray) {
+    for (let products of newArray) {
     let productsPrint = document.createElement('li');
     productsPrint.textContent = `${products.product} - ${products.price}kr (x${products.quantity})`;
     cartList.appendChild(productsPrint);
-    console.log(newArray);
+    priceInput.value = "";
+    productInput.value = "";
     }
 }
     )
